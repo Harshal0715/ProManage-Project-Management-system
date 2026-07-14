@@ -1,7 +1,8 @@
 import axios from "axios";
 
 export const api = axios.create({
-  baseURL: "http://localhost:8081",
+  //baseURL: "http://localhost:8081",
+  baseURL: "https://promanage-b9az.onrender.com",
   headers: {
     "Content-Type": "application/json",
   },

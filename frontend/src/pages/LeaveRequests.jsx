@@ -92,7 +92,8 @@ export default function LeaveRequests() {
   const updateLeaveStatus = async (leaveId, status) => {
     try {
       await fetch(
-        `http://localhost:8081/api/workspaces/${workspaceId}/leaves/${leaveId}/status?status=${status}`,
+        //`http://localhost:8081/api/workspaces/${workspaceId}/leaves/${leaveId}/status?status=${status}`,
+        `https://promanage-b9az.onrender.com/api/workspaces/${workspaceId}/leaves/${leaveId}/status?status=${status}`,
         { method: "PUT" }
       );
       fetchData();
